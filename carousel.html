@@ -63,14 +63,13 @@
 
         .slide .frame {
             position: relative;
-            background: white;
+            background: transparent;
             border-radius: 20px;
-            padding: 12px;
+            padding: 0;
             box-shadow: 
+                0 0 15px rgba(168, 85, 247, 0.3),
                 0 0 30px rgba(168, 85, 247, 0.2),
-                0 0 60px rgba(168, 85, 247, 0.1),
-                0 0 90px rgba(168, 85, 247, 0.05),
-                inset 0 1px 1px rgba(255, 255, 255, 0.1);
+                0 0 45px rgba(168, 85, 247, 0.1);
             transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
@@ -79,9 +78,9 @@
             position: absolute;
             inset: -2px;
             border-radius: 22px;
-            background: linear-gradient(145deg, rgba(168, 85, 247, 0.5), rgba(139, 92, 246, 0.3), rgba(168, 85, 247, 0.5));
+            background: linear-gradient(145deg, rgba(168, 85, 247, 0.6), rgba(139, 92, 246, 0.4), rgba(168, 85, 247, 0.6));
             z-index: -1;
-            opacity: 0.6;
+            opacity: 0.7;
             filter: blur(1px);
         }
 
@@ -105,10 +104,10 @@
 
         .slide.center .frame {
             box-shadow: 
-                0 0 40px rgba(168, 85, 247, 0.3),
-                0 0 80px rgba(168, 85, 247, 0.15),
-                0 0 120px rgba(168, 85, 247, 0.08),
-                inset 0 1px 1px rgba(255, 255, 255, 0.1);
+                0 0 20px rgba(168, 85, 247, 0.4),
+                0 0 40px rgba(168, 85, 247, 0.25),
+                0 0 60px rgba(168, 85, 247, 0.15),
+                inset 0 1px 1px rgba(255, 255, 255, 0.08);
         }
 
         /* Left slide */
@@ -120,8 +119,8 @@
 
         .slide.left .frame {
             box-shadow: 
-                0 0 20px rgba(168, 85, 247, 0.15),
-                0 0 40px rgba(168, 85, 247, 0.08);
+                0 0 10px rgba(168, 85, 247, 0.2),
+                0 0 20px rgba(168, 85, 247, 0.12);
         }
 
         /* Right slide */
@@ -133,8 +132,8 @@
 
         .slide.right .frame {
             box-shadow: 
-                0 0 20px rgba(168, 85, 247, 0.15),
-                0 0 40px rgba(168, 85, 247, 0.08);
+                0 0 10px rgba(168, 85, 247, 0.2),
+                0 0 20px rgba(168, 85, 247, 0.12);
         }
 
         /* Far left */
@@ -161,7 +160,7 @@
 
         .image-name {
             text-align: center;
-            margin-top: 1rem;
+            margin-top: 0.25rem;
             font-size: 1.1rem;
             font-family: 'Brush Script MT', 'Lucida Handwriting', 'Snell Roundhand', cursive;
             color: #c4b5fd;
@@ -203,12 +202,6 @@
             font-size: 0.85rem;
             color: #555;
             text-align: center;
-        }
-
-        .counter {
-            margin-top: 0.5rem;
-            font-size: 0.9rem;
-            color: #777;
         }
 
         /* Arrow buttons for non-touch devices */
@@ -273,7 +266,6 @@
     </div>
     
     <div class="image-name" id="imageName"></div>
-    <div class="counter" id="counter"></div>
     <div class="indicators" id="indicators"></div>
     <p class="nav-hint">Swipe or use arrows to navigate</p>
 
@@ -315,7 +307,6 @@
         const carousel = document.getElementById('carousel');
         const indicatorsContainer = document.getElementById('indicators');
         const imageName = document.getElementById('imageName');
-        const counter = document.getElementById('counter');
 
         // Create slides with frames
         images.forEach((src, index) => {
@@ -397,9 +388,6 @@
 
             // Update image name
             imageName.textContent = getImageName(images[currentIndex]);
-            
-            // Update counter
-            counter.textContent = `${currentIndex + 1} / ${images.length}`;
         }
 
         function nextSlide() {
