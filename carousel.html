@@ -161,7 +161,7 @@
         .image-name {
             text-align: center;
             margin-top: 0.25rem;
-            font-size: 1.1rem;
+            font-size: 2.0rem;
             font-family: 'Brush Script MT', 'Lucida Handwriting', 'Snell Roundhand', cursive;
             color: #c4b5fd;
             padding: 0 1rem;
@@ -199,6 +199,7 @@
 
         .nav-hint {
             margin-top: 1.5rem;
+            margin-bottom: 2.5rem;
             font-size: 0.85rem;
             color: #555;
             text-align: center;
@@ -271,32 +272,32 @@
 
     <script>
         const images = [
-            "Creatures/A_Vile_Twinkle_colour.gif",
-            "Creatures/Admiral_Salvador_colour.gif",
-            "Creatures/Alasdair_colour.gif",
-            "Creatures/Boogieman_colour.gif",
-            "Creatures/Browser_colour.gif",
-            "Creatures/Candyman_colour.gif",
-            "Creatures/Death_Surf_colour.gif",
-            "Creatures/Gabriel_colour.gif",
-            "Creatures/Ganthet_colour.gif",
-            "Creatures/Gorb_colour.gif",
-            "Creatures/Le_Doggard_colour.gif",
-            "Creatures/Mark_my_words_colour.gif",
-            "Creatures/Pimpernel_colour.gif",
-            "Creatures/Poster_colour.gif",
-            "Creatures/Prof_colour.gif",
-            "Creatures/Sal_colour.gif",
-            "Creatures/Skeletard_colour.gif",
-            "Creatures/Skurler_colour.gif",
-            "Creatures/The_Living_Nightmare_colour.gif",
-            "Creatures/Vile_Skull_One_colour.gif",
-            "Creatures/Vile_Skull_Two_colour.gif",
-            "Creatures/cactus_nasty_colour.gif",
-            "Creatures/grampa_colour.gif",
-            "Creatures/lemon_spider_colour.gif",
-            "Creatures/slurms_mcgee_colour.gif",
-            "Creatures/spadoof_colour.gif"
+            "Creatures/A_Vile_Twinkle_colour.png",
+            "Creatures/Admiral_Salvador_colour.png",
+            "Creatures/Alasdair_colour.png",
+            "Creatures/Boogieman_colour.png",
+            "Creatures/Browser_colour.png",
+            "Creatures/Candyman_colour.png",
+            "Creatures/Death_Surf_colour.png",
+            "Creatures/Gabriel_colour.png",
+            "Creatures/Ganthet_colour.png",
+            "Creatures/Gorb_colour.png",
+            "Creatures/Le_Doggard_colour.png",
+            "Creatures/Mark_my_words_colour.png",
+            "Creatures/Pimpernel_colour.png",
+            "Creatures/Poster_colour.png",
+            "Creatures/Prof_colour.png",
+            "Creatures/Sal_colour.png",
+            "Creatures/Skeletard_colour.png",
+            "Creatures/Skurler_colour.png",
+            "Creatures/The_Living_Nightmare_colour.png",
+            "Creatures/Vile_Skull_One_colour.png",
+            "Creatures/Vile_Skull_Two_colour.png",
+            "Creatures/cactus_nasty_colour.png",
+            "Creatures/grampa_colour.png",
+            "Creatures/lemon_spider_colour.png",
+            "Creatures/slurms_mcgee_colour.png",
+            "Creatures/spadoof_colour.png"
         ];
 
         let currentIndex = 0;
@@ -344,7 +345,7 @@
         });
 
         function getImageName(src) {
-            return src.split('/').pop().replace('_colour.gif', '').replace(/_/g, ' ');
+            return src.split('/').pop().replace('_colour.png', '').replace(/_/g, ' ');
         }
 
         function getRelativeIndex(index) {
