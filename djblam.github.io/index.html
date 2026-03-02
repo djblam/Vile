@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio website of [Your Name] - Developer, Creator, Problem Solver">
+    <meta name="author" content="[Your Name]">
+    <meta name="theme-color" content="#1a1a2e">
+    <title>[Your Name] | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+    <style>
+        /* Critical CSS for initial render */
+        :root {
+            --bg-primary: #ffffff;
+            --text-primary: #1a1a2e;
+        }
+        [data-theme="dark"] {
+            --bg-primary: #1a1a2e;
+            --text-primary: #eaeaea;
+        }
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">&lt;YourName /&gt;</a>
+            <nav class="nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark/light mode">
+                <span class="theme-icon">🌙</span>
+            </button>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1 class="hero-title">[Your Name]</h1>
+                    <p class="hero-subtitle">Developer • Creator • Problem Solver</p>
+                    <p class="hero-description">
+                        I build modern web experiences and solve complex problems with elegant solutions.
+                        Welcome to my corner of the internet.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Hello! I'm <strong>[Your Name]</strong>, a passionate developer based in 
+                            <strong>[Your Location]</strong>. I specialize in building exceptional 
+                            digital experiences that are fast, accessible, and visually appealing.
+                        </p>
+                        <p>
+                            With expertise in <strong>[Your Skills]</strong>, I love turning complex 
+                            problems into simple, beautiful, and intuitive solutions. When I'm not 
+                            coding, you can find me <strong>[Your Hobbies]</strong>.
+                        </p>
+                        <div class="skills">
+                            <h3>Technologies I work with:</h3>
+                            <ul class="skills-list">
+                                <li>JavaScript / TypeScript</li>
+                                <li>Python</li>
+                                <li>HTML5 / CSS3</li>
+                                <li>React / Vue</li>
+                                <li>Node.js</li>
+                                <li>Git / GitHub</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <span>Your Photo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <span>Project Screenshot</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Project One</h3>
+                            <p class="project-description">
+                                A brief description of the project. What problem does it solve? 
+                                What technologies were used?
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">API</span>
+                                <span class="tag">CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View live demo">Live Demo ↗</a>
+                                <a href="#" class="project-link" aria-label="View source code">GitHub ↗</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <span>Project Screenshot</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Project Two</h3>
+                            <p class="project-description">
+                                Another amazing project description. Highlight the unique features 
+                                and your role in development.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Data</span>
+                                <span class="tag">Automation</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View live demo">Live Demo ↗</a>
+                                <a href="#" class="project-link" aria-label="View source code">GitHub ↗</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <span>Project Screenshot</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Project Three</h3>
+                            <p class="project-description">
+                                Describe your third project here. What challenges did you overcome? 
+                                What did you learn?
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View live demo">Live Demo ↗</a>
+                                <a href="#" class="project-link" aria-label="View source code">GitHub ↗</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="contact-intro">
+                    Have a project in mind or just want to say hello? I'd love to hear from you!
+                </p>
+                <form class="contact-form" id="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name <span class="required">*</span></label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            required 
+                            autocomplete="name"
+                            placeholder="Your name"
+                        >
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required 
+                            autocomplete="email"
+                            placeholder="your.email@example.com"
+                        >
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input 
+                            type="text" 
+                            id="subject" 
+                            name="subject"
+                            placeholder="What's this about?"
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message <span class="required">*</span></label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            rows="5" 
+                            required
+                            placeholder="Your message..."
+                        ></textarea>
+                        <span class="error-message" id="message-error"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        Send Message
+                    </button>
+                </form>
+                <div class="contact-alt">
+                    <p>Or reach out directly:</p>
+                    <div class="social-links">
+                        <a href="https://github.com/djblam" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            GitHub
+                        </a>
+                        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            LinkedIn
+                        </a>
+                        <a href="mailto:your.email@example.com" aria-label="Email">
+                            Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="current-year">2026</span> [Your Name]. All rights reserved.</p>
+            <p class="footer-tagline">Built with ☕ and vanilla JavaScript</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
